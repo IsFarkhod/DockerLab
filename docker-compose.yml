@@ -28,8 +28,8 @@ services:
       - "8080:80"
     environment:
       PMA_HOST: db
-      MYSQL_USER: farxod
-      MYSQL_ROOT_PASSWORD: farxod_root
+      MYSQL_USER: farxod1
+      MYSQL_ROOT_PASSWORD: root
     # делает доступным сайт в браузере по url localhost:
     networks:
       - wpsite
@@ -41,7 +41,7 @@ services:
       - db_data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: db
+      MYSQL_DATABASE: wordpress
       MYSQL_USER: farxod
       MYSQL_PASSWORD: farxod_root
     # делает доступным сайт в браузере по url localhost:
